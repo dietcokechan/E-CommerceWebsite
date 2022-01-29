@@ -123,3 +123,13 @@ img{
     text-align: center;
     font-size: 1.2em;
 }
+
+/* FOOTER */
+h4{
+    color:darkred;
+    font-size: 1.2em;;
+}
+
+.footer p{
+    text-align: center;
+}
