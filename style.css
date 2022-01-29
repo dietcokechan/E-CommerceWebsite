@@ -1,0 +1,16 @@
+/* GLOBAL STYLES */
+h1, h2, h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* HEADER */
+h1{
+    font-size: 5em;
+    border-style: groove;
+    border-width: 50px;
+}
+
+header p{
+    text-align: center;
+}
