@@ -1,7 +1,16 @@
 /* GLOBAL STYLES */
+*{
+    max-width: 100%;
+}
+
 h1, h2, h3{
     text-align: center;
     font-weight: bold;
+    color: darkred;
+}
+
+p{
+    color: darkred;
 }
 
 body{
@@ -60,4 +69,57 @@ header p{
 
 .navbar a:active{
     color: grey;
+}
+
+/* SLIDESHOW */
+.slideshow{
+    border-style: groove;
+    border-color: darkred;
+    border-width: 10px;
+}
+
+h3{
+    font-size: 2em;
+}
+
+img{
+    margin-bottom: 1em;
+}
+
+/* PRODUCTS  */
+.product-list{
+    display: inline-flexbox;
+}
+
+.product-list a{
+    margin: 0.2em;
+    padding: auto;
+}
+
+.product-list #btn{
+    display: inline-block;
+    font-size: 1.2em;
+    background-color: darkred;
+    border-style: outset;
+    border-color: rgb(97, 0, 0);
+    text-decoration: none;
+    color: black;
+    margin-left: 50%;
+}
+
+/* ABOUT US */
+.about-us{
+    margin: 3em;
+    border-style: ridge;
+    border-width: 5px;
+    border-color: darkred;
+}
+
+.about-us h1{
+    font-size: 2.5em;
+}
+
+.about-us p{
+    text-align: center;
+    font-size: 1.2em;
 }
