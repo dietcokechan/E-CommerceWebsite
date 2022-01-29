@@ -5,12 +5,26 @@ h1, h2, h3{
 }
 
 /* HEADER */
-h1{
+
+#title{
     font-size: 5em;
+    color: darkred;
+}
+
+header{
     border-style: groove;
-    border-width: 50px;
+    border-width: 10px;
+    border-color: darkred;
 }
 
 header p{
     text-align: center;
+    font-size: 1.3em;
+    color: darkred;
+}
+
+/* NAVIGATION BAR  */
+
+.navbar{
+    background-color: black;
 }
