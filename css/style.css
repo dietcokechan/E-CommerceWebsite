@@ -93,10 +93,15 @@ header p{
 h3{
     font-size: 2em;
     color: #4d4d74;
+    text-align: center;
+    display: block;
 }
 
-img{
+.slideshow img{
     margin-bottom: 1em;
+    width: 600px;
+    height: 600px;
+    margin-left: 30%;
 }
 
 .slideshow-container{
