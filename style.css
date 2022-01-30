@@ -12,6 +12,7 @@
 /***************************************** GLOBAL STYLES *****************************************/
 *{
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4{
@@ -98,6 +99,36 @@ img{
     margin-bottom: 1em;
 }
 
+.slideshow-container{
+    position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+}
+
+.next{
+    right: 16px;
+}
+
+.slideshow-btn img{
+    width: 30px;
+    height: 40px;
+    background-color: rgb(255, 255, 255, 0.4);
+    margin-left: 31%;
+}
+
+.slideshow-btn img:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
 /***************************************** PRODUCTS  *****************************************/
 .product-list{
     display: inline-flexbox;
@@ -130,7 +161,7 @@ img{
     width: 300px;
 }
 
-.product-list #btn{
+.product-list #more-btn{
     display: inline-block;
     font-size: 1.3em;
     font-weight: bold;
@@ -171,6 +202,22 @@ h4{
     color:#666699;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.footer #top-btn{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btn img{
+    width: 100%;
+    height: 100%;
 }
 
 .footer p{
