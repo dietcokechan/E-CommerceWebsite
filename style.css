@@ -1,45 +1,52 @@
-/* GLOBAL STYLES */
+/***************************************** COLOR PALETTE  *****************************************/
+/*
+#D9A464 = Gold
+#996666 = Copper Rose
+#555555 = Davy’s Grey
+#003153 = Prussian Blue
+#666699 = Dark Blue-Gray
+#4d4d74 = Dark Dark Blue-Gray
+*/
+
+
+/***************************************** GLOBAL STYLES *****************************************/
 *{
     max-width: 100%;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     text-align: center;
     font-weight: bold;
-    color: darkred;
+    color: #4d4d74;
+    font-family: "Sofia", sans-serif;
+    text-shadow: 1px 1px 1px #003153;
 }
 
 p{
-    color: darkred;
+    color: #666699;
 }
 
 body{
-    background-color: black;
+    background-color: #996666;
+    font-family: "Sofia", sans-serif;
 }
 
-/* HEADER */
-
+/***************************************** HEADER *****************************************/
 #title{
     font-size: 5em;
-    color: darkred;
-}
-
-header{
-    border-style: groove;
-    border-width: 10px;
-    border-color: darkred;
+    color: #4d4d74;
 }
 
 header p{
     text-align: center;
     font-size: 1.3em;
-    color: darkred;
+    color: #D9A464;
 }
 
-/* NAVIGATION BAR  */
+/***************************************** NAVIGATION BAR  *****************************************/
 
 .navbar{
-    background-color: black;
+    background-color: #996666;
     position: relative;
 }
 
@@ -54,39 +61,44 @@ header p{
     padding: 0.2em;
 }
 
+.navbar a{
+    text-shadow: 1px 1px 1px #555555;
+}
+
 .navbar a:link{
-    color: darkred;
+    color: #D9A464;
     text-decoration: none;
 }
 
 .navbar a:visited{
-    color: darkred;
+    color: #D9A464;
 }
 
 .navbar a:hover{
-    color: grey;
+    color: #003153;
 }
 
 .navbar a:active{
-    color: grey;
+    color: #003153;
 }
 
-/* SLIDESHOW */
+/***************************************** SLIDESHOW *****************************************/
 .slideshow{
     border-style: groove;
-    border-color: darkred;
+    border-color: #666699;
     border-width: 10px;
 }
 
 h3{
     font-size: 2em;
+    color: #4d4d74;
 }
 
 img{
     margin-bottom: 1em;
 }
 
-/* PRODUCTS  */
+/***************************************** PRODUCTS  *****************************************/
 .product-list{
     display: inline-flexbox;
 }
@@ -94,42 +106,92 @@ img{
 .product-list a{
     margin: 0.2em;
     padding: auto;
+    text-decoration: none;
+}
+
+.product-list img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-container1{
+    display: inline-flex;
+    width: 300px;
+}
+
+.product-container2{
+    display: inline-flex;
+    width: 300px;
+}
+
+.product-container3{
+    display: inline-flex;
+    width: 300px;
 }
 
 .product-list #btn{
     display: inline-block;
-    font-size: 1.2em;
-    background-color: darkred;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #666699;
     border-style: outset;
-    border-color: rgb(97, 0, 0);
+    border-color: #4d4d74;
+    border-width: 5px;
     text-decoration: none;
-    color: black;
+    color: #D4AF37;
     margin-left: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
-/* ABOUT US */
+/***************************************** ABOUT US *****************************************/
 .about-us{
     margin: 3em;
     border-style: ridge;
-    border-width: 5px;
-    border-color: darkred;
+    border-width: 10px;
+    border-color: #666699;
 }
 
 .about-us h1{
     font-size: 2.5em;
+    color: #4d4d74;
 }
 
 .about-us p{
     text-align: center;
     font-size: 1.2em;
+    margin: 1em;
+    padding: 0.5em;
+    color: #D4AF37;
 }
 
-/* FOOTER */
+/***************************************** FOOTER *****************************************/
 h4{
-    color:darkred;
-    font-size: 1.2em;;
+    color:#666699;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .footer p{
+    display: block;
     text-align: center;
+    text-shadow: 1px 1px 1px #003153;
+}
+
+.social-links a:link{
+    color: #D4AF37	;
+    text-decoration: none;
+}
+
+.social-links a:visited{
+    color: #D4AF37	;
+}
+
+.social-links a:hover{
+    color: #003153;
+}
+
+.social-links a:active{
+    color: #003153;
 }
