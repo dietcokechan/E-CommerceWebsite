@@ -129,9 +129,27 @@ img{
     background-color: rgb(255, 255, 255, 0.8);
 }
 
-/***************************************** PRODUCTS  *****************************************/
+/***************************************** SAMPLE PRODUCTS  *****************************************/
 .product-list{
     display: inline-flexbox;
+}
+
+.product-list a:link{
+    color: #D4AF37	;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #003153;
+}
+
+.product-list a:visited{
+    color: #D4AF37	;
+}
+
+.product-list a:hover{
+    color: #003153;
+}
+
+.product-list a:active{
+    color: #003153;
 }
 
 .product-list a{
@@ -242,3 +260,7 @@ h4{
 .social-links a:active{
     color: #003153;
 }
+
+/***************************************** CATEGORY NAVIGATION BAR *****************************************/
+
+/***************************************** PRODUCT LIST *****************************************/
