@@ -32,6 +32,10 @@ body{
     font-family: "Sofia", sans-serif;
 }
 
+div{
+    display: block;
+}
+
 /***************************************** HEADER *****************************************/
 #title{
     font-size: 5em;
@@ -85,7 +89,7 @@ header p{
 
 /***************************************** SLIDESHOW *****************************************/
 .slideshow{
-    border-style: groove;
+    border-style: double;
     border-color: #666699;
     border-width: 10px;
 }
@@ -98,6 +102,7 @@ h3{
 }
 
 .slideshow img{
+    margin-top: 1em;
     margin-bottom: 1em;
     width: 600px;
     height: 600px;
@@ -136,7 +141,7 @@ h3{
 
 /***************************************** SAMPLE PRODUCTS  *****************************************/
 .product-list{
-    display: inline-flexbox;
+    display: flex;
 }
 
 .product-list a:link{
@@ -165,26 +170,22 @@ h3{
 
 .product-list img{
     width: 300px;
-    height: 300px;
-    object-fit: cover;
+    height: 400px;
 }
 
-.product-container1{
-    display: inline-flex;
-    width: 300px;
+.product-list .column{
+    float: left;
+    width: 25%;
+    padding: 5px;
 }
 
-.product-container2{
-    display: inline-flex;
-    width: 300px;
+.product-list::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.product-container3{
-    display: inline-flex;
-    width: 300px;
-}
-
-.product-list #more-btn{
+#more-btn{
     display: inline-block;
     font-size: 1.3em;
     font-weight: bold;
@@ -202,7 +203,7 @@ h3{
 /***************************************** ABOUT US *****************************************/
 .about-us{
     margin: 3em;
-    border-style: ridge;
+    border-style: double;
     border-width: 10px;
     border-color: #666699;
 }
@@ -267,5 +268,104 @@ h4{
 }
 
 /***************************************** CATEGORY NAVIGATION BAR *****************************************/
+.navbar-inner ul{
+    text-align: center;
+    border-style: double;
+    border-width: 5px;
+    border-color: #4d4d74;
+}
+
+.navbar-inner li{
+    display: inline-flex;
+    font-size: 1.2em;
+    margin-left: 7em;
+    margin-right: 7em;
+    padding: 0.2em;
+}
+
+.navbar-inner a{
+    text-shadow: 1px 1px 1px #555555;
+}
+
+.navbar-inner a:link{
+    color: #D9A464;
+    text-decoration: none;
+}
+
+.navbar-inner a:visited{
+    color: #D9A464;
+}
+
+.navbar-inner a:hover{
+    color: #003153;
+}
+
+.navbar-inner a:active{
+    color: #003153;
+}
 
 /***************************************** PRODUCT LIST *****************************************/
+.full-list ul{
+    list-style: none;
+}
+
+.full-list a{
+    text-decoration: none;
+}
+
+.full-list img{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.full-list a:link{
+    color: #D4AF37	;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #003153;
+}
+
+.full-list a:visited{
+    color: #D4AF37	;
+}
+
+.full-list a:hover{
+    color: #003153;
+}
+
+.full-list a:active{
+    color: #003153;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.row .column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.product-info{
+    display: table-cell;
+}
+
+#load-more{
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #666699;
+    border-style: outset;
+    border-color: #4d4d74;
+    border-width: 5px;
+    text-decoration: none;
+    color: #D4AF37;
+    margin-left: 45.5%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
