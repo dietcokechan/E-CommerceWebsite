@@ -18,11 +18,22 @@
         <!-- main navigation bar -->
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/products.html">Products</a></li>
-                <li><a href="html/contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="form-container">
+            <form class="form">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="comment" form="usrform"></textarea><br>
+                <button type="submit" id="submit" name="submit">Submit</button>
+              </form>
+        </div>
     </body>
     <footer class="footer">
         <!-- back to top button -->
