@@ -257,11 +257,6 @@ h3{
 }
 
 /***************************************** FOOTER *****************************************/
-.footer{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-}
 
 h4{
     color:white;
@@ -292,7 +287,6 @@ h4{
     color: white;
     text-align: center;
     text-shadow: 1px 1px 1px rgb(209, 20, 83);
-    align-self: center;
 }
 
 .footer a img{
@@ -300,8 +294,23 @@ h4{
     height: auto;
 }
 
+.section-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 .social-links{
-    align-self: flex-start !important;
+    align-self: left !important;
+}
+
+.terms{
+    align-self: right !important;
+}
+
+.copyright{
+    align-self: center !important;
 }
 
 /***************************************** CATEGORY NAVIGATION BAR *****************************************/
