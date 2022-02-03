@@ -6,8 +6,6 @@
         <!-- link to css file -->
         <link rel="stylesheet" href="../css/style.css">
         <!-- link to font -->
-        <!-- link to scripts -->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
         
     </head>
     <header>
@@ -37,10 +35,15 @@
                 <button type="submit" id="submit" name="submit" onclick="sendMessage()">Submit</button>
               </form>
         </div>
+
+        <!-- link to scripts -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/contactForm.js"></script>
     </body>
     <footer class="footer">
         <!-- back to top button -->
-        <button id="top-btn">
+        <button onclick="scrollToTop()" id="top-btn">
             <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
         </button>
         <div class="section-container">
