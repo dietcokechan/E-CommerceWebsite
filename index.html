@@ -3,23 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Title</title>
-
         <!-- link to css file -->
         <link rel="stylesheet" href="css/style.css">
-
         <!-- link to font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
-        <!-- link to other pages -->
-        
+        <!-- link to scripts -->
+        <script src="js/slideshow.js"></script>
     </head>
     <header>
+        <img class="logo" src="images/kitty update without piercing.png">
         <h1 id="title">Title</h1>
-        <p>(This is an example of a brief bio)<br>
+        <p>(This is an example of a brief bio)
         </p>
     </header>
     <body>
-        
         <!-- main navigation bar -->
         <nav class="navbar">
             <ul>
@@ -33,21 +30,28 @@
         <div class="content-wrapper">
             <div class="slideshow-container">
                 <h2>This is an example of a heading for the slideshow below</h2><br>
-
                 <!-- a slideshow of some of the products -->
                 <section class="slideshow">
-                    <a href="">
-                        <img src="https://images.unsplash.com/photo-1573575154350-35e29dfd6cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=789&q=80"/>
-                    </a>
-                    <!-- dots for slideshow -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick=""></span>
-                        <span class="dot" onclick=""></span>
-                        <span class="dot" onclick=""></span>
+                    <div class="slides fade">
+                            <img src="https://images.unsplash.com/photo-1573575154350-35e29dfd6cdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=789&q=80"/>
                     </div>
-                </section>
+                    <div class="slides fade">
+                            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+                    </div>
+                    <div class="slides fade">
+                            <img src="https://images.unsplash.com/photo-1603974372039-adc49044b6bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=734&q=80"/>
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </section><br>
+                <!-- dots for slideshow -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
-
             <!-- list of more products  -->
             <h2>This is another heading for the products shown below</h2>
             <section class="product-grid">
@@ -72,12 +76,10 @@
         </div>
     </body>
     <footer class="footer">
-
         <!-- back to top button -->
         <button id="top-btn">
             <img src="https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-up-01-512.png">
         </button>
-
         <!-- section for social links -->
         <section class="social-links">
             <h4>Social Links</h4>
