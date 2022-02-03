@@ -118,6 +118,7 @@ header p{
 
 .slides{
     display: none;
+    height: auto;
 }
 
 h3{
@@ -235,6 +236,9 @@ h3{
 
 /***************************************** ABOUT US *****************************************/
 .about-us{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
     margin: 3em;
 }
 
@@ -244,13 +248,12 @@ h3{
 }
 
 .about-us p{
-    text-align: center;
+    text-align: justify;
     font-size: 1.2em;
     margin: 1em;
     padding: 0.5em;
     color: white;
     width: 1000px;
-    margin-left: 15%;
 }
 
 /***************************************** FOOTER *****************************************/
@@ -456,32 +459,50 @@ input{
 
 /***************************************** CART *****************************************/
 .cart-container{
-    display: flex;
     width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .cart-container li{
     list-style: none;
-    border-style: outset;
 }
 
 .cart-container a{
     text-decoration: none;
 }
 
+.cart-container a:link{
+    color: white;
+    text-shadow: 1px 1px 1px rgb(209, 20, 83);
+}
+
+.cart-container a:visited{
+    color: white	;
+}
+
+.cart-container a:hover{
+    color: rgb(209, 20, 83);
+}
+
+.cart-container a:active{
+    color: rgb(209, 20, 83);
+}
+
 .cart-container img{
-    width: 100%;
+    max-width: 200px;
 }
 
 .info-container{
-    display: flex;
-}
-
-.info-container .product-info{
     align-items: right;
 }
 
 .total-container{
-    display: flex;
-    justify-content:last baseline;
+    align-self: flex-end;
+}
+
+.total-container li{
+    color: white;
+    text-shadow: 1px 1px 1px rgb(209, 20, 83);
 }
