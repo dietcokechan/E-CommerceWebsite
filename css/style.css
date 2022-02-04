@@ -252,13 +252,13 @@ h3{
 }
 
 .about-us h1{
-    font-size: 30px;
+    font-size: 2em;
     color: white;
 }
 
 .about-us p{
     text-align: justify;
-    font-size: 10px;
+    font-size: 1em;
     margin: 1em;
     padding: 0.5em;
     color: white;
@@ -431,20 +431,20 @@ h4{
 /***************************************** CONTACT FORM *****************************************/
 .form-container{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
     margin: 2em;
-    background-color:black;
-    border-style: solid;
-    border-color:black;
-    border-width: 2px;
-    border-radius: 10px;
 }
 
 form{
+    padding: 1em;
     margin: 2em;
     font-size: 2em;
+    background-color:black;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 10px;
 }
 
 label{
@@ -466,10 +466,9 @@ input{
 }
 
 #submit{
-    display: block;
+    align-self: center !important;
     color: white;
     margin-top: 2em;
-    width: 100%;
     height: 60px;
     background-color: rgb(209, 20, 83);
     border-style: outset;
