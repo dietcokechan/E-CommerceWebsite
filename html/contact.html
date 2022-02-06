@@ -27,19 +27,17 @@
         <div class="form-container">
             <form class="form">
                 <label for="name">Name</label><br>
-                <input type="text" id="name" name="name" required><br>
+                <input type="text" id="name" name="name" runat="server" required><br>
                 <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" runat="server" required><br>
                 <label for="message">Message</label><br>
-                <textarea id="message" name="comment" form="usrform"></textarea><br>
+                <textarea id="message" name="comment" form="usrform" runat="server"></textarea><br>
                 <button type="submit" id="submit" name="submit" onclick="sendMessage()">Submit</button>
               </form>
         </div>
 
         <!-- link to scripts -->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="../js/contactForm.js"></script>
+        <script src="../js/index.js"></script>
     </body>
     <footer class="footer">
         <!-- back to top button -->
