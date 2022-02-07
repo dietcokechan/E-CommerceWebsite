@@ -1,3 +1,4 @@
+// connection string: mongodb+srv://<databasename>:<password>@cluster0.jqkdw.mongodb.net/test"
 const {MongoClient} = require('mongodb');
 
 async function main(){
@@ -32,3 +33,41 @@ async function listDatabases(client){
     console.log("Databases:");
     databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 };
+
+const express = require('express');
+const mongo = require('mongodb').MongoClient;
+
+const app = express();
+
+// endpoint for products
+app.post("/Product", (req, res) => {
+    res.json({
+        confirmation: "success",
+        data: "it works!"
+    });
+})
+
+app.get("/Products", (req, res) => {
+
+})
+
+// endpoint for customers
+app.post("/Customer", (req, res) => {
+
+})
+
+app.get("/Customers", (req, res) => {
+    
+})
+
+// endpoint for orders
+app.post("/Order", (req, res) => {
+
+})
+
+app.get("/Orders", (req, res) => {
+    
+})
+
+// start server
+app.listen(5555, () => console.log("Server ready"))
