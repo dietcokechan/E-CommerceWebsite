@@ -200,8 +200,8 @@ h3{
 }
 
 .product-grid img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
 }
 
 .product-grid a{
@@ -382,8 +382,8 @@ h4{
 }
 
 .product-list-container img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 600px;
 }
 
 .product-list-container a{
@@ -469,6 +469,8 @@ input{
     align-self: center !important;
     color: white;
     margin-top: 2em;
+    margin-left: 1em;
+    padding: 0.5em;
     height: 60px;
     background-color: rgb(209, 20, 83);
     border-style: outset;
@@ -514,7 +516,7 @@ input{
 }
 
 .cart-container img{
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .info-container{
@@ -528,4 +530,21 @@ input{
 .total-container li{
     color: white;
     text-shadow: 1px 1px 1px rgb(209, 20, 83);
+}
+
+.checkout-btn button{
+    color: white;
+    margin-top: 2em;
+    padding: 0.5em;
+    height: 70px;
+    width: auto;
+    background-color: rgb(209, 20, 83);
+    border-style: outset;
+    border-color: rgb(136, 14, 55);
+    border-width: 5px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 44%;
 }
