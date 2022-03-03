@@ -1,30 +1,29 @@
-const mongodb = require('mongodb');
 const mongoose = require('mongoose');
 
 const productsSchema = new mongoose.Schema({
     name: String,
-    price: mongodb.Int32,
+    price: Number,
     img: {
         data: Buffer,
         contentType: String
     },
     color: String,
-    quantity: mongodb.Int32,
+    quantity: Number,
     category: String
 });
 
 const clientsSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
-    number: { type: mongodb.Int32, required: true },
+    number: { type: Number, required: true },
     address: { type: String, required: true },
-    orders: [{ type: Object, required: true }]
+    orders: [{ type: String, required: true }]
 });
 
 const ordersSchema = new mongoose.Schema({
-    products: [{ type: Object, required: true }],
-    quantity: mongodb.Int32,
-    Total: mongodb.Int32
+    products: [{ type: String, required: true }],
+    quantity: Number,
+    Total: Number
 });
 
 module.exports = mongoose.model("Products", productsSchema);
