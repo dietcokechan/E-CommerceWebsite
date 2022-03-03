@@ -1,12 +1,12 @@
-// connection string: mongodb+srv://<databasename>:<password>@cluster0.jqkdw.mongodb.net/test"
 const {MongoClient} = require('mongodb');
 
 async function main(){
     /**
+     * Connection string: mongodb+srv://<databasename>:<password>@cluster0.jqkdw.mongodb.net/test"
      * Connection URI. Update <username>, <password>, and <your-cluster-url> to reflect your cluster.
      * See https://docs.mongodb.com/ecosystem/drivers/node/ for more details
      */
-    const uri = "mongodb+srv://MyFirstDatabase:kxnc4cQlgNLqCwbg@cluster0.jqkdw.mongodb.net/test";
+    const uri = "mongodb+srv://88metalsDB:Gd7cE37qVG2kF6i7@88metals.jmaw4.mongodb.net/test";
  
 
     const client = new MongoClient(uri);
