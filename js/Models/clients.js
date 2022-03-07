@@ -8,4 +8,4 @@ const clientsSchema = new mongoose.Schema({
     orders: [{ type: String, required: true }]
 });
 
-module.exports = mongoose.model("Clients", clientsSchema);
+module.exports = mongoose.model("clients", clientsSchema);

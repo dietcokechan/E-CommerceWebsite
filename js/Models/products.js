@@ -12,6 +12,6 @@ const productsSchema = new mongoose.Schema({
     category: String
 });
 
-productsSchema.index({ name: 1, price: 1, img: 1, color: 1, quantity: 1, category:1}, {unique: true})
 
-module.exports = mongoose.model("Products", productsSchema);
+
+module.exports = mongoose.model("products", productsSchema);
