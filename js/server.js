@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Router = require("./routes")
+const Router = require("./routes");
+const model = require("./models");
 
 const app = express();
 
@@ -22,4 +23,31 @@ db.once("open", function () {
 
 // start server
 app.use(Router);
-app.listen(5555, () => console.log("Server ready"))
+app.listen(3000, () => console.log("Server ready"));
+
+// endpoints
+app.post("/Product", (req, res) => {
+
+})
+
+app.get("/Products", (req, res) => {
+
+})
+
+// endpoint for customers
+app.post("/Client", (req, res) => {
+
+})
+
+app.get("/Clients", (req, res) => {
+
+})
+
+// endpoint for orders
+app.post("/Order", (req, res) => {
+
+})
+
+app.get("/Orders", (req, res) => {
+
+})
