@@ -201,7 +201,7 @@ h3{
 
 .product-grid img{
     width: 400px;
-    height: 600px;
+    height: auto;
 }
 
 .product-grid a{
@@ -383,7 +383,7 @@ h4{
 
 .product-list-container img{
     width: 400px;
-    height: 600px;
+    height: auto;
 }
 
 .product-list-container a{
