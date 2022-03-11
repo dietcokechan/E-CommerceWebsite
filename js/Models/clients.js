@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const clientsSchema = new mongoose.Schema({
+var clientSchema = new mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true },
     number: { type: Number, required: true },
@@ -8,4 +8,10 @@ const clientsSchema = new mongoose.Schema({
     orders: [{ type: String, required: true }]
 });
 
-module.exports = mongoose.model("clients", clientsSchema);
+var clientModel = mongoose.model("clients", clientSchema);
+
+// client.save((err) => {
+//     if (err) console.log(err);
+// });
+
+module.exports = clientModel;

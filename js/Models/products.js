@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const productsSchema = new mongoose.Schema({
+var productSchema = new mongoose.Schema({
     name: String,
     price: Number,
     img: {
@@ -12,6 +12,10 @@ const productsSchema = new mongoose.Schema({
     category: String
 });
 
+var productModel = mongoose.model("products", productSchema);
 
+// product.save((err) => {
+//     if (err) console.log(err);
+// });
 
-module.exports = mongoose.model("products", productsSchema);
+module.exports = productModel;

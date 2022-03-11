@@ -1,9 +1,15 @@
 const mongoose = require('mongoose');
 
-const ordersSchema = new mongoose.Schema({
+var orderSchema = new mongoose.Schema({
     products: [{ type: String, required: true }],
     quantity: Number,
-    Total: Number
+    total: Number
 });
 
-module.exports = mongoose.model("orders", ordersSchema);
+var orderModel = mongoose.model("orders", orderSchema);
+
+// order.save((err, order) => {
+//     if (err) console.log(err);
+// });
+
+module.exports = orderModel;
